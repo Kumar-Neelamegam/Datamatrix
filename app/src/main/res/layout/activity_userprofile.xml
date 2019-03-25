@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:cardBackgroundColor="@android:color/white"
+app:cardCornerRadius="@dimen/spacing_xmedium"
+app:cardElevation="5dp"
+app:cardUseCompatPadding="true">
+
+<LinearLayout
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary"
+        android:scaleType="centerCrop"
+        android:src="@drawable/progresys_web_logo" />
+
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/image"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="-45dp"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_account_circle_black_32dp"
+        app:civ_border="true"
+        android:layout_gravity="center"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="0"
+        app:civ_border_color="@color/grey_10"
+        app:civ_border_width="0dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_large">
+
+        <TextView
+            android:id="@+id/employee_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edvin Herac"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/grey_90"
+            app:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/employee_destination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Project Manager"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/green_500"
+            app:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/spacing_medium"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_exit"
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            app:srcCompat="@drawable/ic_exit_to_app_black_24dp" />
+
+        <View
+            android:layout_width="@dimen/spacing_middle"
+            android:layout_height="0dp" />
+
+        <ImageButton
+            android:id="@+id/button_close"
+            android:layout_width="@dimen/spacing_xlarge"
+            android:layout_height="@dimen/spacing_xlarge"
+            android:background="?attr/selectableItemBackgroundBorderless"
+
+            app:srcCompat="@drawable/ic_close_black_24dp" />
+
+        <View
+            android:layout_width="@dimen/spacing_middle"
+            android:layout_height="0dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</androidx.cardview.widget.CardView>

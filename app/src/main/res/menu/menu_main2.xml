@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="progresys.com.scandatamatrix.CoreModules.Details">
+    <item
+        android:id="@+id/action_refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        android:title="@string/action_refresh"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_exit"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_exit_to_app_black_24dp2"
+        android:title="@string/action_refresh"
+        app:showAsAction="always" />
+</menu>
